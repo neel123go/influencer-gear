@@ -138,12 +138,40 @@ body{
     color: #787885;
     font-weight: 700;
 }
-.collection a{
+.collection .see-more-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.collection .see-more-btn a{
     font-weight: bold;
     font-size: 18px;
     color: rgba(224, 44, 109, 0.87);
     text-decoration: none;
-    float: right;
-    margin-top: 40px;
+    margin-top: 50px;
     word-spacing: 5px;
+}
+
+/* Footer Section Style */
+footer{
+    background-color: #0A0826;
+    height: 250px;
+    text-align: center;
+    color: #FFFFFF;
+}
+footer h2{
+   padding-top: 50px;
+}
+footer p, h4{
+    font-size: 14px;
+    color: #D9DBE1;
+    font-weight: 400;
+    margin: 3px 0;
+}
+footer .social-link a i{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    background-color: #22203B;
 }
