@@ -25,10 +25,17 @@ body{
 }
 .header-title h2{
     color: #3A3A3A;
+    font-size: 30px;
 }
-.cart-icon .fa-shopping-cart{
+.cart-icon .fas{
     font-size: 30px;
     color: #252525;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+.cart-icon a{
+    text-decoration: none;
+    color: #3a3a3abc;
 }
 
 /* Banner Section Style */
@@ -151,6 +158,59 @@ body{
     word-spacing: 5px;
 }
 
+/* Sign-Up Section Style */
+.sign-up-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
+    border-radius: 10px;
+}
+.sign-up-section .image-side img{
+    width: 100%;
+}
+.sign-up-section .form-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-section .form-side h2{
+    color: #FF735C;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+form label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+form input{
+    width: 300px;
+    padding: 8px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #FF735C;
+    color: #3A3A3A;
+}
+form button{
+    width: 100%;
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top: 40px;
+    color: white;
+    border: none;
+    background-color: #FF735C;
+}
+form p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
 /* Footer Section Style */
 footer{
     background-color: #0A0826;
@@ -167,8 +227,10 @@ footer p, h4{
     font-weight: 400;
     margin: 3px 0;
 }
+footer .social-link{
+    margin-top: 40px;
+}
 footer .social-link a i{
-    margin-top: 20px;
     margin-right: 10px;
     padding: 10px;
     color: #FFFFFF;
