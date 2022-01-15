@@ -16,12 +16,10 @@ body{
 
 /* Header Section Style */
 .header-item{
-    margin-top: 80px;
-}
-.header-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 80px;
 }
 .header-title h2{
     color: #3A3A3A;
@@ -87,12 +85,12 @@ body{
     align-items: center;
 }
 .banner-img img{
-    width: 500px;
-    height: 474px;
+    width: 450px;
+    height: 450px;
     padding: 20px;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* Products Section Style */
@@ -154,7 +152,7 @@ body{
     font-size: 18px;
     color: rgba(224, 44, 109, 0.87);
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 40px;
     word-spacing: 5px;
 }
 
@@ -163,7 +161,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    margin: 40px 0;
+    margin: 70px 0;
     border-radius: 10px;
 }
 .sign-up-section .image-side img{
@@ -174,11 +172,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .sign-up-section .form-side h2{
     color: #FF735C;
     font-size: 35px;
     margin-bottom: 40px;
+}
+ form{
+    width: 50%;
 }
 form label{
     display: block;
@@ -186,24 +188,25 @@ form label{
     margin-bottom: 5px;
 }
 form input{
-    width: 300px;
+    width: 94%;
     padding: 8px 10px;
     outline: none;
     border-radius: 5px;
     border: 1px solid #FF735C;
     color: #3A3A3A;
+    font-size: 16px;
 }
 form button{
     width: 100%;
-    padding: 6px 0;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: transparent;
+    padding: 8px 10px;
+    border-radius: 5px;
     margin-top: 40px;
     color: white;
     border: none;
     background-color: #FF735C;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
 }
 form p{
     margin-top: 10px;
@@ -236,4 +239,98 @@ footer .social-link a i{
     color: #FFFFFF;
     border-radius: 50%;
     background-color: #22203B;
+}
+
+
+/* --------------------------------
+---------- Responsive Style -------------
+-----------------------------------*/
+
+/* Smaller Smartphones */
+@media screen and (max-width: 680px){
+    .container{
+        max-width: 688px;
+        margin: 0 20px;
+    }
+    .header-item{
+        margin-top: 15px;
+    }
+    .header-title h2{
+        font-size: 21px;
+    }
+    .cart-icon .fas{
+        font-size: 21px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .cart-icon span{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        height: 100%;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-size: 25px;
+    }
+    .banner-details{
+        font-size: 14px;
+    }
+    .banner-img{
+        width: 100%;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 258px;
+        height: 257px;
+    }
+    .collection{
+        margin-top: 50px;
+    }
+    .collection h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .products, .sign-up-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .collection .see-more-btn a{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .sign-up-section{
+        margin: 40px 0;
+    }
+    .sign-up-section .form-side{
+        order: 2;
+    }
+    .sign-up-section .image-side{
+        order: 1;
+    }
+    .sign-up-section .form-side h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    form{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    form input{
+        width: 92%;
+    }
+    form label{
+        margin-top: 20px;
+        margin-bottom: 2px;
+    }
+    form p{
+        font-size: 14px;
+    }
 }
