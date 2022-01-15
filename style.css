@@ -10,7 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -181,6 +181,7 @@ body{
 }
  form{
     width: 50%;
+    margin-bottom: 20px;
 }
 form label{
     display: block;
@@ -188,7 +189,7 @@ form label{
     margin-bottom: 5px;
 }
 form input{
-    width: 94%;
+    width: 95%;
     padding: 8px 10px;
     outline: none;
     border-radius: 5px;
@@ -196,8 +197,11 @@ form input{
     color: #3A3A3A;
     font-size: 16px;
 }
+form .create-account-btn{
+    text-align: start;
+}
 form button{
-    width: 100%;
+    width: 75%;
     padding: 8px 10px;
     border-radius: 5px;
     margin-top: 40px;
@@ -212,7 +216,6 @@ form p{
     margin-top: 10px;
     font-size: 15px;
 }
-
 
 /* Footer Section Style */
 footer{
@@ -241,15 +244,14 @@ footer .social-link a i{
     background-color: #22203B;
 }
 
-
 /* --------------------------------
 ---------- Responsive Style -------------
 -----------------------------------*/
 
 /* Smaller Smartphones */
-@media screen and (max-width: 680px){
+@media screen and (max-width: 480px){
     .container{
-        max-width: 688px;
+        max-width: 480px;
         margin: 0 20px;
     }
     .header-item{
@@ -321,10 +323,6 @@ footer .social-link a i{
     }
     form{
         width: 85%;
-        margin-bottom: 20px;
-    }
-    form input{
-        width: 92%;
     }
     form label{
         margin-top: 20px;
@@ -332,5 +330,129 @@ footer .social-link a i{
     }
     form p{
         font-size: 14px;
+    }
+}
+
+/* Tablets & large Smartphones */
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .container{
+        max-width: 768px;
+        margin: 0 30px;
+    }
+    .header-item{
+        margin-top: 15px;
+    }
+    .header-title h2{
+        font-size: 23px;
+    }
+    .cart-icon .fas{
+        font-size: 23px;
+        margin-left: 10px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        height: 100%;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-size: 25px;
+    }
+    .banner-details{
+        font-size: 14px;
+    }
+    .banner-img{
+        width: 100%;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 318px;
+        height: 318px;
+    }
+    .collection{
+        margin-top: 50px;
+    }
+    .collection h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+    .collection .see-more-btn a{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .sign-up-section{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 40px 0;
+        padding: 40px;
+    }
+    .sign-up-section .form-side{
+        order: 2;
+    }
+    .sign-up-section .image-side{
+        order: 1;
+    }
+    .sign-up-section .form-side h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    form{
+        width: 80%;
+    }
+}
+
+/* Laptops, large tablets in landscape, and small desktops */
+@media screen and (max-width: 1279px) and (min-width: 768px){
+    .container{
+        max-width: 1279px;
+        margin: 0 40px;
+    }
+    .header-item{
+        margin-top: 15px;
+    }
+    .banner{
+        margin-top: 30px;
+        height: 100%;
+    }
+    .banner-content{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner-img img{
+        width: 308px;
+        height: 308px;
+    }
+    .products, .sign-up-section{
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .collection .see-more-btn a{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .sign-up-section{
+        margin: 50px 0;
+    }
+    .sign-up-section .form-side h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    form{
+        width: 75%;
+    }
+    .sign-up-section .form-side h2{
+        margin: 20px 0;
     }
 }
